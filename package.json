@@ -1,0 +1,60 @@
+{
+  "name": "bithub-admin",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "start": "can-serve --port 8080",
+    "develop": "can-serve --develop --port 8080",
+    "document": "documentjs",
+    "build": "node build"
+  },
+  "main": "bithub-admin/index.stache!done-autorender",
+  "files": [
+    "src"
+  ],
+  "keywords": [],
+  "system": {
+    "main": "bithub-admin/index.stache!done-autorender",
+    "directories": {
+      "lib": "src"
+    },
+    "bundle": [
+      "bithub-admin/static/pages/index.component"
+    ],
+    "configDependencies": [
+      "live-reload"
+    ],
+    "npmAlgorithm": "flat"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.0",
+    "can": "^2.3.16",
+    "can-connect": "^0.3.4",
+    "can-ssr": "^0.11.6",
+    "done-autorender": "^0.6.3",
+    "done-component": "^0.4.0",
+    "done-css": "~1.1.16",
+    "font-awesome": "^4.5.0",
+    "generator-donejs": "^0.7.0",
+    "jquery": "~2.2.1",
+    "selectize": "^0.12.1",
+    "steal": "^0.14.0"
+  },
+  "devDependencies": {
+    "can-fixture": "^0.1.2",
+    "documentjs": "^0.4.2",
+    "donejs-cli": "^0.7.0",
+    "donejs-deploy": "^0.4.0",
+    "funcunit": "~3.0.0",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.14.0",
+    "testee": "^0.2.4"
+  }
+}
