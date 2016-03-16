@@ -31,7 +31,7 @@ const AppState = AppMap.extend({
 	}
 });
 
-stache.registerHelper("pageComponents", function(options) {
+stache.registerHelper("pageComponents", (options) => {
 	let {component: component, context: context, module: module} =
 		options.context.attr("pageComponentConfig");
 	let template = `

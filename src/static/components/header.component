@@ -1,5 +1,5 @@
 <can-component tag="bithub-static-header">
-    <style type="less">
+    <style type="text/less">
 
     </style>
     <template>
@@ -13,7 +13,6 @@
                 </h1>
                 <div class="header-menu">
                     <a href="/login" class="sign-in">Log in</a>
-                    <a href="#" class="try-it-now">Try It Now!</a>
                 </div>
             </div>
         </header>
