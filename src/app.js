@@ -34,13 +34,12 @@ const AppState = AppMap.extend({
 stache.registerHelper("pageComponents", (options) => {
 	let {component: component, context: context, module: module} =
 		options.context.attr("pageComponentConfig");
-	let template = `
-		<can-import from="bithub-admin/${context}/pages/${module}">
+	let template =
+		`<can-import from="bithub-admin/${context}/pages/${module}">
 			{{#if isResolved}}
 				${component}
 			{{/if}}
-		</can-import>
-	`
+		</can-import>`;
 	return can.stache(template)(this, options.helpers, options.nodeList);
 });
 

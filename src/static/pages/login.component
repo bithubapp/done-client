@@ -8,6 +8,35 @@
                 <can-import from="bithub-admin/static/components/header.component" />
                 <can-import from="bithub-admin/static/components/footer.component" />
                 <bithub-static-header></bithub-static-header>
+                <div class="static-container">
+                    <div class="inner-static-container">
+                        <h2 class="static-page-heading">Log in</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form class="new_account" id="new_account" action="/accounts/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="++45X6MtLEvPA6yMOGo0a/BGglHEtWErrIyzdwbLl2s0GWTgWjR1TmeT+5mTqZOZ9H07wDrFN/Y2rPgg1yUk0A==">
+                                    <div class="form-group"><label for="account_email">Email</label>
+                                        <input autofocus="autofocus" class="form-control" type="email" value="" name="account[email]" id="account_email" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAwBJREFUWAntl8tLVHEUx39zZ8YkwkWLpMc/4EQGbSoI5iaR0CKcXUSLhMAg2whOgaaDSAuFqEWPTYuEYhiCYCIjCBMXErWqwKFWITUmVCuJoRmcPmfwXK6Ttzsvm40/OJzX9zx+r/sImCaNRCJxgdJ9VpPqS9kI1NnMBkpzb3oDIWmD/dgFuwIdgj5blnVnZGTkLfK6AW57IBAYLBaLx3B8R54aHR19vg6EkkqlgplMph/cSdTf0BNip8pxols49sHfAx6AbOj86urqPPYed4AUR3+DLwHmBHQGeRr7gBuHPbCwsPAM303kU1AP9ADcXTdOZdmCCQDtahCOLitzj6DSCq354tj3r8ludh3cHjWMjY2dBdetunJsF/EdVV25NHBcFTcnQJqSk6rDC7eNrXASE7chTpLgszWZcmmgqEo55yx4+sqxLr2qGGnglSvYEZnVN/Yxowb0GZXdHHsuFArNq80LJ35W4K9aFsFxKaYJhKPnYX3sbUHtBE9i/6C6cmxXh4aGllTn9iSxTauuHNtt8r1WXbk1PDz8FeUAACnwErqPfgRwWkHC0X+1tbUdxn8NegE9hLq5hrfcOGzFSCRyGn4Zego9ZivPEd/vxqkcUOF/cxq6Qc1LcgaaOtz33LOR8fHxvYVCYQKAzVlw7rxnwD8cbEkW9yy0IjDfLWCp5En5jsI7JaCBY4Wz8bGSLZjchOIyjx3k/VRJA9EGzro8le3bAF3uLo9qlC65KzqElRTs6OgwXV1d8hArwdPptFlcXPQNbUgDtm2baDTqFJeq4XDYt7gA6mqgpaXFxGIxI7OvddTcQGtrq+nt7TXt7es+Jaruw/cQemXM5XJmeXm55M7n82ZmZsOXpVe4Y695BSSDHDTZhrm5ORMMBp2k1Qg1r4AU4fFsksmkyWazhqdaNXUdbG1RTnj9wlYDWyvQ9BWo5IMku1lvRF5cS5WswGz9l80zw6xvA/w3DNLpD88UNTrI+ZPQuG8D8t9AEwcJeATJB2VdQ3JILnJ28r355Q8NEwuP/2ZoBQAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="account_password">Password</label>
+                                        <input autocomplete="off" class="form-control" type="password" name="account[password]" id="account_password" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAwBJREFUWAntl8tLVHEUx39zZ8YkwkWLpMc/4EQGbSoI5iaR0CKcXUSLhMAg2whOgaaDSAuFqEWPTYuEYhiCYCIjCBMXErWqwKFWITUmVCuJoRmcPmfwXK6Ttzsvm40/OJzX9zx+r/sImCaNRCJxgdJ9VpPqS9kI1NnMBkpzb3oDIWmD/dgFuwIdgj5blnVnZGTkLfK6AW57IBAYLBaLx3B8R54aHR19vg6EkkqlgplMph/cSdTf0BNip8pxols49sHfAx6AbOj86urqPPYed4AUR3+DLwHmBHQGeRr7gBuHPbCwsPAM303kU1AP9ADcXTdOZdmCCQDtahCOLitzj6DSCq354tj3r8ludh3cHjWMjY2dBdetunJsF/EdVV25NHBcFTcnQJqSk6rDC7eNrXASE7chTpLgszWZcmmgqEo55yx4+sqxLr2qGGnglSvYEZnVN/Yxowb0GZXdHHsuFArNq80LJ35W4K9aFsFxKaYJhKPnYX3sbUHtBE9i/6C6cmxXh4aGllTn9iSxTauuHNtt8r1WXbk1PDz8FeUAACnwErqPfgRwWkHC0X+1tbUdxn8NegE9hLq5hrfcOGzFSCRyGn4Zego9ZivPEd/vxqkcUOF/cxq6Qc1LcgaaOtz33LOR8fHxvYVCYQKAzVlw7rxnwD8cbEkW9yy0IjDfLWCp5En5jsI7JaCBY4Wz8bGSLZjchOIyjx3k/VRJA9EGzro8le3bAF3uLo9qlC65KzqElRTs6OgwXV1d8hArwdPptFlcXPQNbUgDtm2baDTqFJeq4XDYt7gA6mqgpaXFxGIxI7OvddTcQGtrq+nt7TXt7es+Jaruw/cQemXM5XJmeXm55M7n82ZmZsOXpVe4Y695BSSDHDTZhrm5ORMMBp2k1Qg1r4AU4fFsksmkyWazhqdaNXUdbG1RTnj9wlYDWyvQ9BWo5IMku1lvRF5cS5WswGz9l80zw6xvA/w3DNLpD88UNTrI+ZPQuG8D8t9AEwcJeATJB2VdQ3JILnJ28r355Q8NEwuP/2ZoBQAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+                                    </div>
+                                    <div class="checkbox"><label><input name="account[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="account[remember_me]" id="account_remember_me"> Remember me</label>
+                                    </div>
+                                    <div>
+                                        <input type="submit" name="commit" value="Log in" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled devise-links clearfix">
+                            <li><a href="/accounts/sign_in">Log in</a></li>
+                            <li><a href="/#registration">Sign up</a></li>
+                            <li><a href="/accounts/password/new">Forgot your password?</a></li>
+                            <li><a href="/accounts/confirmation/new">Didn't receive confirmation instructions?</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <bithub-static-footer></bithub-static-footer>
             </div>
         </div>
