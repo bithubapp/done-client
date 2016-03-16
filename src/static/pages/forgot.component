@@ -1,0 +1,39 @@
+<can-component tag="bithub-forgot">
+  <template>
+    <can-import from="bithub-admin/static/components/register.component" />
+    <can-import from="bithub-admin/static/components/header.component" />
+    <can-import from="bithub-admin/static/components/index-content.component" />
+    <can-import from="bithub-admin/static/components/footer.component" />
+    <bithub-static-register></bithub-static-register>
+    <div class="outer-container">
+      <div class="page-container">
+        <bithub-static-header></bithub-static-header>
+        <div class="static-container">
+          <div class="inner-static-container">
+            <h2 class="static-page-heading">Forgot your password?</h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <form class="new_account" id="new_account" action="/accounts/password" accept-charset="UTF-8" method="post">
+                  <input name="utf8" type="hidden" value="✓">
+                  <input type="hidden" name="authenticity_token" value="wJCsMUP3/2yhV5FcNN4j0AMiEtdo/xyhpb7k+UNU6jp4PhkPfwaQVapNsc8YQpfRAKR+63gT9NY/Fr4jtMcgwQ==">
+                  <div class="form-group">
+                    <label for="account_email">Email</label>
+                    <input autofocus="autofocus" class="form-control" type="email" value="" name="account[email]" id="account_email" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAwBJREFUWAntl8tLVHEUx39zZ8YkwkWLpMc/4EQGbSoI5iaR0CKcXUSLhMAg2whOgaaDSAuFqEWPTYuEYhiCYCIjCBMXErWqwKFWITUmVCuJoRmcPmfwXK6Ttzsvm40/OJzX9zx+r/sImCaNRCJxgdJ9VpPqS9kI1NnMBkpzb3oDIWmD/dgFuwIdgj5blnVnZGTkLfK6AW57IBAYLBaLx3B8R54aHR19vg6EkkqlgplMph/cSdTf0BNip8pxols49sHfAx6AbOj86urqPPYed4AUR3+DLwHmBHQGeRr7gBuHPbCwsPAM303kU1AP9ADcXTdOZdmCCQDtahCOLitzj6DSCq354tj3r8ludh3cHjWMjY2dBdetunJsF/EdVV25NHBcFTcnQJqSk6rDC7eNrXASE7chTpLgszWZcmmgqEo55yx4+sqxLr2qGGnglSvYEZnVN/Yxowb0GZXdHHsuFArNq80LJ35W4K9aFsFxKaYJhKPnYX3sbUHtBE9i/6C6cmxXh4aGllTn9iSxTauuHNtt8r1WXbk1PDz8FeUAACnwErqPfgRwWkHC0X+1tbUdxn8NegE9hLq5hrfcOGzFSCRyGn4Zego9ZivPEd/vxqkcUOF/cxq6Qc1LcgaaOtz33LOR8fHxvYVCYQKAzVlw7rxnwD8cbEkW9yy0IjDfLWCp5En5jsI7JaCBY4Wz8bGSLZjchOIyjx3k/VRJA9EGzro8le3bAF3uLo9qlC65KzqElRTs6OgwXV1d8hArwdPptFlcXPQNbUgDtm2baDTqFJeq4XDYt7gA6mqgpaXFxGIxI7OvddTcQGtrq+nt7TXt7es+Jaruw/cQemXM5XJmeXm55M7n82ZmZsOXpVe4Y695BSSDHDTZhrm5ORMMBp2k1Qg1r4AU4fFsksmkyWazhqdaNXUdbG1RTnj9wlYDWyvQ9BWo5IMku1lvRF5cS5WswGz9l80zw6xvA/w3DNLpD88UNTrI+ZPQuG8D8t9AEwcJeATJB2VdQ3JILnJ28r355Q8NEwuP/2ZoBQAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+                  </div>
+                  <div>
+                    <input type="submit" name="commit" value="Send me reset password instructions" class="btn btn-primary">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <ul class="list-unstyled devise-links clearfix">
+              <li><a href="/login">Log in</a></li>
+              <li><a href="/confirm">Didn't receive confirmation instructions?</a></li>
+            </ul>
+          </div>
+        </div>
+        <bithub-static-footer></bithub-static-footer>
+      </div>
+    </div>
+  </template>
+</can-component>

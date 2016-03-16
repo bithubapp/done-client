@@ -1,13 +1,14 @@
 <can-component tag="bithub-index">
-    <style type="less">
-
-    </style>
     <template>
+        <can-import from="bithub-admin/static/components/register.component" />
+        <can-import from="bithub-admin/static/components/header.component" />
+        <can-import from="bithub-admin/static/components/index-content.component" />
+        <can-import from="bithub-admin/static/components/footer.component" />
+        <bithub-static-register></bithub-static-register>
         <div class="outer-container">
             <div class="page-container">
-                <can-import from="bithub-admin/static/components/header.component" />
-                <can-import from="bithub-admin/static/components/footer.component" />
                 <bithub-static-header></bithub-static-header>
+                <bithub-static-index-content></bithub-static-index-content>
                 <bithub-static-footer></bithub-static-footer>
             </div>
         </div>

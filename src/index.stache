@@ -9,7 +9,7 @@
         {{asset "inline-cache"}}
 
         <can-import from="bithub-admin/styles/all.css" />
-        <can-import from="bithub-admin/styles.less" />
+        <!-- <can-import from="bithub-admin/styles.less" /> -->
         <can-import from="bithub-admin/app" export-as="viewModel" />
 
         {{{pageComponents}}}

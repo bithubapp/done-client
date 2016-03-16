@@ -5,8 +5,10 @@ import "can/route/pushstate/";
 import stache from "can/view/stache/";
 
 const pageContext = {
-	"index": "static",
-	"login": "static"
+	"confirm":	"static",
+	"forgot": 	"static",
+	"index": 	"static",
+	"login": 	"static"
 };
 
 const AppState = AppMap.extend({

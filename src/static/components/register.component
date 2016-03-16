@@ -1,0 +1,27 @@
+<can-component tag="bithub-static-register">
+    <script type="events">
+        export default {
+            ".close-registration-overlay click": () => {
+                $('body').removeClass('registration-open');
+        		$('.register-account-overlay').removeClass('register-account-overlay--shown');
+            }
+        }
+    </script>
+    <template>
+        <div class="register-account-overlay">
+          <div class="register-account-wrap">
+            <button class="close-registration-overlay"><img src="/images/site/bithub-site_close-icon.svg"></button>
+            <div class="get-started-title">Get Started with Bit<b>Hub</b></div>
+            <p>Sign up With Email:</p>
+            <form action="/accounts" method="post">
+              <input type="hidden" name="authenticity_token" id="authenticity_token" value="WJHJhdCtFGKeeESEDmL3/kKApI1Uq0Ju2DNoDmf6bafgP3y77Fx7W5ViZBci/kP/QQbIsURHqhlCmzLUkGmnXA==">
+              <input name="utf8" type="hidden" value="✓">
+              <input type="email" placeholder="Your Email" name="account[email]" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAeJJREFUWAntk88rRFEUx71nSlnMkpK/YMTCBmVBibKQpWRhoShspgw1Y2aahQUlFn5sLEwpTUoRUmInURZkZmsjFtYSmudz5OgaZmHjKffV6Xu+53zPPeed+55T4tOTTCYHaD3o+tRf2oawOj8HeHt33wcIyBjcRwUwjtVj167rLsbj8TP8Tw+6csdxxjzPayZxj59OJBJ7n0SQTCZTmsvlRtC1Q5+wTWrThTrhLolq8AJxGGvB+vP5/DHxbrNAmsNPySXRtGE9+LvEw6aOuJPNZnfIzeF3Yt3YKrolU6e+XME0gkoNCMJlM8sUvW3oPRchXvPumzCFrkoDqVSqF12HckViQ+SalCvKAK1KTKRAhpIvVZ9iujKu4uNg6r7VySHkWvQwRRnAU1KIfAtFc4Vag/+oRgY4Moo/XN7qjnvMaQB+qL6JxB8DgcCxxorpJM8GvvRyKY5IMz1AEP4MDHK3LxqneIb4pXJFYhPRaPRWOX/POrFd5YrEFjjvRLmiG4vFbiC1CKTBAbYCb0S8pSJB+EMwGGwgP4ntY2tYB7/hvKkj5oVCoS5wFNvGNrjKPupHTJ36jjq/jQw0S89h+QZ8ff7vAHwbV6z+3Nf12+Z2A3YDdgN2A3YDdgN2A3YDf2IDrwcSt9jHU+IqAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+              <input type="password" placeholder="Choose a password" name="account[password]">
+              <input type="password" placeholder="Confirm your password" name="account[password_confirmation]">
+              <button>Create Free Account</button>
+            </form>
+          </div>
+        </div>
+    </template>
+</can-component>

@@ -1,7 +1,15 @@
 <can-component tag="bithub-static-header">
-    <style type="text/less">
-
-    </style>
+    <script type="events">
+        export default {
+            ".try-it-now click": () => {
+                $('.register-account-overlay').addClass('register-account-overlay--shown');
+                setTimeout(function(){
+                    $('body').addClass('registration-open');
+                });
+                return false;
+            }
+        }
+    </script>
     <template>
         <header class="site-header">
             <button class="hamburger sm">
@@ -13,6 +21,7 @@
                 </h1>
                 <div class="header-menu">
                     <a href="/login" class="sign-in">Log in</a>
+                    <a href="#" class="try-it-now">Try It Now!</a>
                 </div>
             </div>
         </header>

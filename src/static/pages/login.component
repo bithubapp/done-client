@@ -1,12 +1,11 @@
 <can-component tag="bithub-login">
-    <style type="less">
-
-    </style>
     <template>
+        <can-import from="bithub-admin/static/components/register.component" />
+        <can-import from="bithub-admin/static/components/header.component" />
+        <can-import from="bithub-admin/static/components/footer.component" />
+        <bithub-static-register></bithub-static-register>
         <div class="outer-container">
             <div class="page-container">
-                <can-import from="bithub-admin/static/components/header.component" />
-                <can-import from="bithub-admin/static/components/footer.component" />
                 <bithub-static-header></bithub-static-header>
                 <div class="static-container">
                     <div class="inner-static-container">
@@ -30,10 +29,8 @@
                             </div>
                         </div>
                         <ul class="list-unstyled devise-links clearfix">
-                            <li><a href="/accounts/sign_in">Log in</a></li>
-                            <li><a href="/#registration">Sign up</a></li>
-                            <li><a href="/accounts/password/new">Forgot your password?</a></li>
-                            <li><a href="/accounts/confirmation/new">Didn't receive confirmation instructions?</a></li>
+                            <li><a href="/forgot">Forgot your password?</a></li>
+                            <li><a href="/confirm">Didn't receive confirmation instructions?</a></li>
                         </ul>
                     </div>
                 </div>

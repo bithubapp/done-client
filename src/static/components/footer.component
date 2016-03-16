@@ -1,7 +1,4 @@
 <can-component tag="bithub-static-footer">
-    <style type="less">
-
-    </style>
     <template>
         <footer class="site-footer">
             <div class="inner-footer-wrap">
